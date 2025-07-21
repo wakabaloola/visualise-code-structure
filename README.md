@@ -1,27 +1,27 @@
-# 🧠 cs — Code Structure Analyzer for Python
+# cs — Code Structure Analyzer for Python
 
 `cs` is a command-line tool that recursively scans a directory of Python files and summarizes the structure of your codebase — showing **functions**, **classes**, **methods**, their **arguments**, **types**, and optionally **docstrings**. It's perfect for quickly understanding large or unfamiliar projects, generating documentation, or exploring legacy code.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🧭 **Recursive Directory Traversal** — Walks through all Python files in a directory tree
-- 🔎 **Function and Method Extraction** — Displays function names, arguments, types, and return types
-- 🧩 **Class Structure Representation** — Lists all classes and their associated methods
-- 📝 **Docstring Previewing** — Optionally includes docstrings in a clean format
-- 🎛️ **Customizable Verbosity** — Choose how much detail to display (from just names to full type signatures)
-- 🚫 **Ignore Patterns** — Skip specific files/directories using glob-style patterns
-- 📜 **Man-Page Style Help** — Rich command-line help with paging and examples
+- **Recursive Directory Traversal** — Walks through all Python files in a directory tree
+- **Function and Method Extraction** — Displays function names, arguments, types, and return types
+- **Class Structure Representation** — Lists all classes and their associated methods
+- **Docstring Previewing** — Optionally includes docstrings in a clean format
+- **Customizable Verbosity** — Choose how much detail to display (from just names to full type signatures)
+- **Ignore Patterns** — Skip specific files/directories using glob-style patterns
+- **Man-Page Style Help** — Rich command-line help with paging and examples
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repo and link the script to your `PATH`:
 
 ```bash
-git clone https://github.com/yourusername/cs.git
+git clone https://github.com/wakabaloola/cs.git
 cd cs
 chmod +x cs.py
 ln -s "$(pwd)/cs.py" /usr/local/bin/cs
@@ -33,9 +33,9 @@ Ensure Python 3.6+ is installed and accessible as `python3`.
 
 ---
 
-## 🧰 Usage
+## Usage
 
-### 📄 Basic Syntax
+### Basic Syntax
 
 ```bash
 cs [OPTIONS] [DIRECTORY]
@@ -43,7 +43,7 @@ cs [OPTIONS] [DIRECTORY]
 
 If no directory is provided, the current directory is used by default.
 
-### 🧪 Examples
+### Examples
 
 | Command                              | Description                                                       |
 | ------------------------------------ | ----------------------------------------------------------------- |
@@ -56,7 +56,7 @@ If no directory is provided, the current directory is used by default.
 
 ---
 
-## 🎛️ Options
+## Options
 
 | Option               | Description                                        |
 | -------------------- | -------------------------------------------------- |
@@ -68,9 +68,9 @@ If no directory is provided, the current directory is used by default.
 
 ---
 
-## 🧪 Output Examples
+## Output Examples
 
-### 🔹 Basic
+### Basic
 
 ```text
 main.py
@@ -82,7 +82,7 @@ Functions:
 └── run_server
 ```
 
-### 🔸 With Arguments and Types (`-ta`)
+### With Arguments and Types (`-ta`)
 
 ```text
 main.py
@@ -99,7 +99,7 @@ Classes:
     └── load(self) -> Dict[str, Any]
 ```
 
-### 📚 With Docstrings (`-d`)
+### With Docstrings (`-d`)
 
 ```text
 Functions:
@@ -110,7 +110,7 @@ Functions:
 
 ---
 
-## ❗ Default Ignore Patterns
+## Default Ignore Patterns
 
 By default, the following are always excluded:
 
@@ -122,7 +122,7 @@ You can add more via `--ignore`.
 
 ---
 
-## 🧪 Development
+## Development
 
 To test locally without installing:
 
@@ -132,12 +132,12 @@ python3 cs.py -ta -d /path/to/codebase
 
 ---
 
-## 📄 License
+## License
 
 MIT License © 2025 [Dimitri Skliros](https://github.com/yourusername)
 
 ---
 
-## 💬 Feedback
+## Feedback
 
 Found a bug or have a feature request? Please open an [issue](https://github.com/wakabaloola/cs/issues) or submit a pull request. Contributions welcome!
